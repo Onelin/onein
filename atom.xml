@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Onein</title>
+  <subtitle>一个始终相信自己代码一定有bug的小菜</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://onelin.github.io/"/>
+  <updated>2016-09-23T09:39:20.000Z</updated>
+  <id>https://onelin.github.io/</id>
+  
+  <author>
+    <name>Onein</name>
+    <email>bigfacemail@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://onelin.github.io/2016/09/23/test/"/>
+    <id>https://onelin.github.io/2016/09/23/test/</id>
+    <published>2016-09-23T09:39:20.000Z</published>
+    <updated>2016-09-23T09:39:20.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>about</title>
+    <link href="https://onelin.github.io/2016/09/13/index/"/>
+    <id>https://onelin.github.io/2016/09/13/index/</id>
+    <published>2016-09-13T03:43:12.000Z</published>
+    <updated>2016-09-23T09:35:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h4><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="450" height="450" src="http://music.163.com/outchain/player?type=0&id=306397077&auto=1&height=450"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;关于我&quot;&gt;&lt;a href=&quot;#关于我&quot; class=&quot;headerlink&quot; title=&quot;关于我&quot;&gt;&lt;/a&gt;关于我&lt;/h4&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
