@@ -445,6 +445,12 @@
 
         
         
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
 
         
         
@@ -498,6 +504,21 @@
   </a>
 </div>
 
+<div>
+  <span id="showDays"></span>
+  <script>
+  var birthDay = new Date("12/01/2015");
+  var now = new Date();
+  var duration = now.getTime() - birthDay.getTime();
+  var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+  document.getElementById("showDays").innerHTML = "已运行 "+total+" 天";
+  </script>
+  
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  &nbsp;&nbsp;<span id="busuanzi_container_site_uv">
+      总访问量<span id="busuanzi_value_site_uv"></span>次
+  </span>
+</div>
         
 
         
