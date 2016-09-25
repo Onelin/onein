@@ -30,8 +30,10 @@
 <p>在结果中可以看到你的node.js的版本号,如我的是4.2.3.然后执行以下命令:  </p>
 <p>nvm use 4.2.3 #将4.2.3替换为你的版本号</p>
 <p>执行完之后运行一下node命令,应该就能用了.但这样是不够的,重启终端之后需要重新设置,因此我们要为nvm设置一下默认的使用版本.使用以下命令:<br>nvm alias default 4.2.3 #对应以上结果中的版本号<br>注意,一定要先执行use命令,以上命令才会生效,这也是我参考的文章中没写清楚的地方,当时卡在这好久,因为我use之后重启了终端,导致上面命令执行不成功.  </p>
-<p>设置完之后再输入nvm ls,结果如下:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_2.png" alt="已指定default"></p>
+<p>设置完之后再输入nvm ls,结果如下:</p>
+<p><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_2.png" alt="已指定default"></p>
 <p>如果有那行绿色的版本号,就表示设置成功了.<br>现在再运行node,npm和hexo命令试一下,应该就都正常了.</p>
+<h3 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h3><p><a href="http://yinshudi.com/2015/12/22/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%B8%ADNode.js%E7%9A%84%E7%8E%AF%E5%A2%83%E9%97%AE%E9%A2%98/" target="_blank" rel="external">尹述迪的博客</a><br><a href="http://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="external">dimsky的简书</a></p>
 ]]></content>
     </entry>
     
