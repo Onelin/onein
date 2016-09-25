@@ -104,16 +104,19 @@
 
 
 
-<meta name="description" content="###所以说不管我在这写什么都是不行的对吗?">
+<meta name="description" content="怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我是测试的">
+<meta property="og:title" content="安装hexo遇到的一些问题">
 <meta property="og:url" content="https://onelin.github.io/2016/09/25/index/index.html">
 <meta property="og:site_name" content="Onein">
-<meta property="og:description" content="###所以说不管我在这写什么都是不行的对吗?">
-<meta property="og:updated_time" content="2016-09-25T10:03:29.000Z">
+<meta property="og:description" content="怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…">
+<meta property="og:image" content="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_1.png">
+<meta property="og:image" content="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_2.png">
+<meta property="og:updated_time" content="2016-09-25T11:10:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我是测试的">
-<meta name="twitter:description" content="###所以说不管我在这写什么都是不行的对吗?">
+<meta name="twitter:title" content="安装hexo遇到的一些问题">
+<meta name="twitter:description" content="怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…">
+<meta name="twitter:image" content="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_1.png">
 
 
 
@@ -136,7 +139,7 @@
 
   <link rel="canonical" href="https://onelin.github.io/2016/09/25/index/"/>
 
-  <title> 我是测试的 | Onein </title>
+  <title> 安装hexo遇到的一些问题 | Onein </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -295,7 +298,7 @@
   
   
 
-  <article class="post post-type-Index " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-categories " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -306,7 +309,7 @@
             
             
               
-                我是测试的
+                安装hexo遇到的一些问题
               
             
           </h1>
@@ -318,13 +321,22 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-25T02:08:46+08:00" content="2016-09-25">
+            <time itemprop="dateCreated" datetime="2016-09-25T19:10:33+08:00" content="2016-09-25">
               2016-09-25
             </time>
           </span>
 
           
 
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/25/index/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/25/index/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -344,10 +356,33 @@
       
 
       
-        <hr>
-<p>###所以说不管我在这写什么都是不行的对吗?</p>
-<hr>
+        <p>怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…  </p>
 <a id="more"></a>
+<p>直接写正题.  </p>
+<p><strong>1.command not found.</strong><br>按照简书上的一个教程 sudo npm install hexo-cli -g 使用这个官方推荐的命令安装完之后,hexo命令一直都是command not found.<br>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。 这里有两种方式安装。如果使用curl的方式安装，安装完成之后一定要重启终端。</p>
+<ol>
+<li><p>Homebrew 安装方式，此安装方式无需重启<br>$ brew install nvm<br>$ mkdir ~/.nvm<br>$ export NVM_DIR=~/.nvm<br>$ . $(brew –prefix nvm)/nvm.sh</p>
+</li>
+<li><p>curl安装方式<br>$ curl <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh</p>
+</li>
+</ol>
+<p>安装完成后，重启终端 并执行下列命令即可安装 Node.js。</p>
+<p>$ nvm install 4 (4是版本号)</p>
+<p>然后再安装hexo<br>以上所有都安装完成之后再安装Hexo</p>
+<p>$ sudo npm install hexo-cli -g      </p>
+<p><strong>2.装完以上这些后,重启Terminal后可能会(这个有可能不会发生,因为看好多人的教程都装的很顺利)又发现hexo不能用了,再次提示command not found,利用nvm 再次install会发现nvm也提示nvm command not found. 那么你需要再次执行上面的 brew install nvm了~  </strong><br>1.nvm ls 查看node.js版本<br>如下所示:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_1.png" alt="未指定default"></p>
+<p>如果这里出现nvm command not found的提示,那么打开你的.profile或.bash_profile文件,检查一下有没有下面这两句话:</p>
+<ol>
+<li>export NVM_DIR=”/Users/yourUsername/.nvm”</li>
+<li>[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh”  # This loads nvm</li>
+</ol>
+<p>没有就加上,记得将yourUsername替换成你自己的用户名</p>
+<p>在结果中可以看到你的node.js的版本号,如我的是4.2.3.然后执行以下命令:  </p>
+<p>nvm use 4.2.3 #将4.2.3替换为你的版本号</p>
+<p>执行完之后运行一下node命令,应该就能用了.但这样是不够的,重启终端之后需要重新设置,因此我们要为nvm设置一下默认的使用版本.使用以下命令:<br>nvm alias default 4.2.3 #对应以上结果中的版本号<br>注意,一定要先执行use命令,以上命令才会生效,这也是我参考的文章中没写清楚的地方,当时卡在这好久,因为我use之后重启了终端,导致上面命令执行不成功.  </p>
+<p>设置完之后再输入nvm ls,结果如下:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_2.png" alt="已指定default"></p>
+<p>如果有那行绿色的版本号,就表示设置成功了.<br>现在再运行node,npm和hexo命令试一下,应该就都正常了.</p>
+
       
     </div>
 
@@ -400,25 +435,6 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/09/25/index/"
-     data-title="我是测试的"
-     data-content=""
-     data-url="https://onelin.github.io/2016/09/25/index/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-
-    </ul>
-    <div class="ds-share-icons-more">
-    </div>
-  </div>
-</div>
-      
     </div>
   </div>
 
@@ -431,6 +447,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/25/index/"
+           data-title="安装hexo遇到的一些问题" data-url="https://onelin.github.io/2016/09/25/index/">
+      </div>
+    
+  </div>
+
 
         </div>
         

@@ -4,12 +4,35 @@
   
     
     <entry>
-      <title><![CDATA[我是测试的]]></title>
+      <title><![CDATA[安装hexo遇到的一些问题]]></title>
       <url>https://onelin.github.io/2016/09/25/index/</url>
-      <content type="html"><![CDATA[<hr>
-<p>###所以说不管我在这写什么都是不行的对吗?</p>
-<hr>
-<a id="more"></a>]]></content>
+      <content type="html"><![CDATA[<p>怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…  </p>
+<a id="more"></a>
+<p>直接写正题.  </p>
+<p><strong>1.command not found.</strong><br>按照简书上的一个教程 sudo npm install hexo-cli -g 使用这个官方推荐的命令安装完之后,hexo命令一直都是command not found.<br>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。 这里有两种方式安装。如果使用curl的方式安装，安装完成之后一定要重启终端。</p>
+<ol>
+<li><p>Homebrew 安装方式，此安装方式无需重启<br>$ brew install nvm<br>$ mkdir ~/.nvm<br>$ export NVM_DIR=~/.nvm<br>$ . $(brew –prefix nvm)/nvm.sh</p>
+</li>
+<li><p>curl安装方式<br>$ curl <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh</p>
+</li>
+</ol>
+<p>安装完成后，重启终端 并执行下列命令即可安装 Node.js。</p>
+<p>$ nvm install 4 (4是版本号)</p>
+<p>然后再安装hexo<br>以上所有都安装完成之后再安装Hexo</p>
+<p>$ sudo npm install hexo-cli -g      </p>
+<p><strong>2.装完以上这些后,重启Terminal后可能会(这个有可能不会发生,因为看好多人的教程都装的很顺利)又发现hexo不能用了,再次提示command not found,利用nvm 再次install会发现nvm也提示nvm command not found. 那么你需要再次执行上面的 brew install nvm了~  </strong><br>1.nvm ls 查看node.js版本<br>如下所示:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_1.png" alt="未指定default"></p>
+<p>如果这里出现nvm command not found的提示,那么打开你的.profile或.bash_profile文件,检查一下有没有下面这两句话:</p>
+<ol>
+<li>export NVM_DIR=”/Users/yourUsername/.nvm”</li>
+<li>[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh”  # This loads nvm</li>
+</ol>
+<p>没有就加上,记得将yourUsername替换成你自己的用户名</p>
+<p>在结果中可以看到你的node.js的版本号,如我的是4.2.3.然后执行以下命令:  </p>
+<p>nvm use 4.2.3 #将4.2.3替换为你的版本号</p>
+<p>执行完之后运行一下node命令,应该就能用了.但这样是不够的,重启终端之后需要重新设置,因此我们要为nvm设置一下默认的使用版本.使用以下命令:<br>nvm alias default 4.2.3 #对应以上结果中的版本号<br>注意,一定要先执行use命令,以上命令才会生效,这也是我参考的文章中没写清楚的地方,当时卡在这好久,因为我use之后重启了终端,导致上面命令执行不成功.  </p>
+<p>设置完之后再输入nvm ls,结果如下:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_2.png" alt="已指定default"></p>
+<p>如果有那行绿色的版本号,就表示设置成功了.<br>现在再运行node,npm和hexo命令试一下,应该就都正常了.</p>
+]]></content>
     </entry>
     
   
