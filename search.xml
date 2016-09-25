@@ -6,10 +6,9 @@
     <entry>
       <title><![CDATA[安装hexo遇到的一些问题]]></title>
       <url>https://onelin.github.io/2016/09/25/index/</url>
-      <content type="html"><![CDATA[<p>怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…  </p>
-<a id="more"></a>
+      <content type="html"><![CDATA[<h5 id="怎么安装网上的教程已经有好多了-我就不再这重复造轮子了-我在这就说一下我搭环境时候遇到的几个问题-装这个真是装的心都碎了-别人按归教程很顺利的就搭好了-我整整的搞了两天-在gitbub-Hexo上看到好多和我一样的问题-但没有一个是能解决我的…"><a href="#怎么安装网上的教程已经有好多了-我就不再这重复造轮子了-我在这就说一下我搭环境时候遇到的几个问题-装这个真是装的心都碎了-别人按归教程很顺利的就搭好了-我整整的搞了两天-在gitbub-Hexo上看到好多和我一样的问题-但没有一个是能解决我的…" class="headerlink" title="怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…"></a>怎么安装网上的教程已经有好多了,我就不再这重复造轮子了,我在这就说一下我搭环境时候遇到的几个问题.装这个真是装的心都碎了,别人按归教程很顺利的就搭好了,我整整的搞了两天~~~在gitbub Hexo上看到好多和我一样的问题,但没有一个是能解决我的…</h5><a id="more"></a>
 <p>直接写正题.  </p>
-<p><strong>1.command not found.</strong><br>按照简书上的一个教程 sudo npm install hexo-cli -g 使用这个官方推荐的命令安装完之后,hexo命令一直都是command not found.<br>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。 这里有两种方式安装。如果使用curl的方式安装，安装完成之后一定要重启终端。</p>
+<h3 id="1-command-not-found"><a href="#1-command-not-found" class="headerlink" title="1. command not found"></a>1. command not found</h3><p>按照简书上的一个教程 sudo npm install hexo-cli -g 使用这个官方推荐的命令安装完之后,hexo命令一直都是command not found.<br>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。 这里有两种方式安装。如果使用curl的方式安装，安装完成之后一定要重启终端。</p>
 <ol>
 <li><p>Homebrew 安装方式，此安装方式无需重启<br>$ brew install nvm<br>$ mkdir ~/.nvm<br>$ export NVM_DIR=~/.nvm<br>$ . $(brew –prefix nvm)/nvm.sh</p>
 </li>
@@ -20,7 +19,7 @@
 <p>$ nvm install 4 (4是版本号)</p>
 <p>然后再安装hexo<br>以上所有都安装完成之后再安装Hexo</p>
 <p>$ sudo npm install hexo-cli -g      </p>
-<p><strong>2.装完以上这些后,重启Terminal后可能会(这个有可能不会发生,因为看好多人的教程都装的很顺利)又发现hexo不能用了,再次提示command not found,利用nvm 再次install会发现nvm也提示nvm command not found. 那么你需要再次执行上面的 brew install nvm了~  </strong><br>1.nvm ls 查看node.js版本<br>如下所示:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_1.png" alt="未指定default"></p>
+<h3 id="2-装完以上这些后-重启Terminal后可能会-这个有可能不会发生-因为看好多人的教程都装的很顺利-又发现hexo不能用了-再次提示command-not-found-利用nvm-再次install会发现nvm也提示nvm-command-not-found-那么你需要再次执行上面的-brew-install-nvm了"><a href="#2-装完以上这些后-重启Terminal后可能会-这个有可能不会发生-因为看好多人的教程都装的很顺利-又发现hexo不能用了-再次提示command-not-found-利用nvm-再次install会发现nvm也提示nvm-command-not-found-那么你需要再次执行上面的-brew-install-nvm了" class="headerlink" title="2. 装完以上这些后,重启Terminal后可能会(这个有可能不会发生,因为看好多人的教程都装的很顺利)又发现hexo不能用了,再次提示command not found,利用nvm 再次install会发现nvm也提示nvm command not found. 那么你需要再次执行上面的 brew install nvm了~"></a>2. 装完以上这些后,重启Terminal后可能会(这个有可能不会发生,因为看好多人的教程都装的很顺利)又发现hexo不能用了,再次提示command not found,利用nvm 再次install会发现nvm也提示nvm command not found. 那么你需要再次执行上面的 brew install nvm了~</h3><p>1.nvm ls 查看node.js版本<br>如下所示:<br><img src="http://7wy3vb.com1.z0.glb.clouddn.com/static/images/hexo_nodejs_1.png" alt="未指定default"></p>
 <p>如果这里出现nvm command not found的提示,那么打开你的.profile或.bash_profile文件,检查一下有没有下面这两句话:</p>
 <ol>
 <li>export NVM_DIR=”/Users/yourUsername/.nvm”</li>
